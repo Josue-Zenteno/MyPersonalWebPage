@@ -10,16 +10,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container className={"top_60"}>
+      <Grid container spacing={7}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: "red" }}>
-          <Header />
+
+        <Grid item xs>
           <Router>
+            <Header />
             <Switch>
               <Route path="/portfolio">
                 <Portfolio />
@@ -35,5 +36,3 @@ function App() {
     </Container>
   );
 }
-
-export default App;
