@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   overflow: hidden;
-  background: white;
+  background: url("./assets/images/Spicy_ProfilePicIRL.jpg");
 }
 
 code {
