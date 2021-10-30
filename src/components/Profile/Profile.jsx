@@ -6,6 +6,8 @@ import myImage from "../../assets/images/Spicy_ProfilePicIRL.jpg";
 import resumeData from "../../utils/resumeData";
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { TimelineContent, TimelineItem } from "@mui/lab";
+import CustomButton from "../Button/CustomButton";
+import DownloadIcon from '@mui/icons-material/Download';
 
 const CustomTimeLineItem = ({title, text, link}) => (
    <TimelineItem>
@@ -49,8 +51,10 @@ export default function Profile(){
                         <CustomTimeLineItem title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link}/>
                     ))}
                 </CustomTimeLine>
-                <br/>
-                <button>my button</button>
+                
+                <div className='button_container'>
+                    <CustomButton text={"Download CV"} icon={<DownloadIcon/>}/>
+                </div>
             </div>
         </div>
     )
