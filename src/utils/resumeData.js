@@ -3,7 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const resumeData = {
-  name: "Josue Carlos Zenteno Yave",
+  name: "Josue Zenteno Yave",
   title: "Software Ingenieering Student",
   birthday: "08/08/2000",
   email: "josuoptp@gmail.com",
