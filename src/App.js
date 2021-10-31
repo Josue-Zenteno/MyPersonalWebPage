@@ -3,8 +3,8 @@ import { Container, Grid } from "@mui/material";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Resume from "./pages/Resume/Resume";
-import Portfolio from "./pages/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
