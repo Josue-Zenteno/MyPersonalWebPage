@@ -19,8 +19,8 @@
   color: var(--main-color) !important;
 }
 
-.header .header_link_active {
-  font-weight: 500;
+.active {
+  font-weight: 500 !important;
   color: var(--main-color) !important;
 }
 
