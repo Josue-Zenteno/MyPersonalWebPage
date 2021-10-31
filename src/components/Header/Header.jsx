@@ -35,7 +35,7 @@ function Header(props){
                     <Nav.Link 
                     as={NavLink} 
                     to='/portfolio' 
-                    className={pathName === '/portfolio' ? 'header_link_active' : 'header_link'}>
+                    className={pathName === '/portfolio' ? 'header_link active' : 'header_link'}>
                         Portfolio
                     </Nav.Link>
                 </Nav>
