@@ -1,6 +1,10 @@
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
+import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
+import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
+import DeliveryDiningOutlinedIcon from "@mui/icons-material/DeliveryDiningOutlined";
 
 const resumeData = {
   name: "Josue Zenteno Yave",
@@ -77,6 +81,52 @@ const resumeData = {
       date: "2021 - Present",
       description:
         "My first education Lorem Ipsum is not simply random text. It has roots in a piece",
+    },
+  ],
+  services: [
+    {
+      title: "Web Development",
+      description: "I have been a badass web developer for 10 years",
+      icon: <WebOutlinedIcon />,
+    },
+    {
+      title: "Branding Identity",
+      description: "I have been a badass brand developer for 10 years",
+      icon: <AssignmentOutlinedIcon />,
+    },
+    {
+      title: "Illustrator",
+      description: "I have been a badass illustration developer for 10 years",
+      icon: <CreateOutlinedIcon />,
+    },
+    {
+      title: "Fast delivery",
+      description: "I have been a badass fast delivery developer for 10 years",
+      icon: <DeliveryDiningOutlinedIcon />,
+    },
+  ],
+  skills: [
+    {
+      title: "Front-end",
+      description: [
+        "ReactJS",
+        "JavaScript",
+        "TypeScript",
+        "Bootstrap",
+        "Material UI",
+      ],
+    },
+    {
+      title: "Back-end",
+      description: ["NodeJS", "Java", "Python", "Solidity"],
+    },
+    {
+      title: "Databases",
+      description: ["Firebase", "My SQL Server", "MySQL", "MongoDB"],
+    },
+    {
+      title: "Source Control",
+      description: ["Git", "Github", "SCRUM", "Agile"],
     },
   ],
 };
