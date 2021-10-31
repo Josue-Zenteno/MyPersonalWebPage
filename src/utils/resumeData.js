@@ -129,6 +129,134 @@ const resumeData = {
       description: ["Git", "Github", "SCRUM", "Agile"],
     },
   ],
+  projects: [
+    {
+      tag: "React",
+      image: "../assets/project_demo.png",
+      title: "React Project 1",
+      caption: "A short description",
+      description: "This is my project 1 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      image: "../assets/project_demo.png",
+      title: "React Project 2",
+      caption: "A short description",
+      description: "This is my project 2 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Angular",
+      image: "../assets/project_demo.png",
+      title: "Angular Project 3",
+      caption: "A short description",
+      description: "This is my project 3 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Vue",
+      image: "../assets/project_demo.png",
+      title: "Vue Project 4",
+      caption: "A short description",
+      description: "This is my project 4 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Vue",
+      image: "../assets/project_demo.png",
+      title: "Vue Project 5",
+      caption: "A short description",
+      description: "This is my project 5 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Angular",
+      image: "../assets/project_demo.png",
+      title: "Angular Project 6",
+      caption: "A short description",
+      description: "This is my project 6 description please fill it in",
+      links: [
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://github.com/Josue-Zenteno",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+  ],
 };
 
 export default resumeData;
