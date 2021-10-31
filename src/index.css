@@ -9,9 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  overflow: hidden;
-  background: url("./assets/images/Spicy_ProfilePicIRL.jpg");
+  background-color: #010409 !important;
+  overflow-x: hidden;
+  background: url("./assets/images/background.png");
 }
 
 code {
