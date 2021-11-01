@@ -5,7 +5,7 @@ import './Footer.css'
 
 export default function Footer(){
     return(
-        <div className= "footer">
+        <div className= "footer mb_30">
             <div className='footer_left'>
                 <Typography className='footer_name'>
                     {resumeData.name}
