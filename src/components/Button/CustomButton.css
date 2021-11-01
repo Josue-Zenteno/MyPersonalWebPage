@@ -1,3 +1,4 @@
+/* Entire Button Section */
 .custom_btn {
   background-color: var(--main-color) !important;
   font-size: 14px !important;
@@ -8,6 +9,16 @@
   line-height: 35px !important;
   min-width: 100px !important;
   outline: none !important;
+}
+
+.custom_btn .btn_text {
+  color: #000 !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  text-align: center;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .custom_btn .btn_icon_container {
@@ -26,13 +37,4 @@
 .custom_btn .btn_icon_container .MuiSvgIcon-root {
   font-size: 16px !important;
 }
-
-.custom_btn .btn_text {
-  color: #000 !important;
-  font-size: 14px !important;
-  text-transform: none !important;
-  text-align: center;
-  width: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
-}
+/* End of Entire Button Section */

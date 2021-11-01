@@ -92,7 +92,6 @@ export default function Portfolio(){
                     ))}
                 </DialogActions>
             </Dialog>
-
         </Grid>
     );
 };

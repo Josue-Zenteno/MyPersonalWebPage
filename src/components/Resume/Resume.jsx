@@ -40,7 +40,7 @@ export default function Resume(){
                         <Grid item sm={12} md={6}>
                             <CustomTimeLine title='Work Experience' icon={<WorkIcon/>}>
                                 {resumeData.experiencies.map(experience => (
-                                    <TimelineItem>
+                                    <TimelineItem key={experience.title}>
                                         <CustomTimeLineSeparator/>
                                         <TimelineContent className='timeline_content'>
                                             <Typography className='timeline_title'>
@@ -62,7 +62,7 @@ export default function Resume(){
                         <Grid item sm={12} md={6}>
                             <CustomTimeLine title='Education' icon={<SchoolIcon/>}>
                                 {resumeData.educations.map(education => (
-                                    <TimelineItem>
+                                    <TimelineItem key={education.title}>
                                         <CustomTimeLineSeparator/>
                                         <TimelineContent className='timeline_content'>
                                             <Typography className='timeline_title'>
@@ -95,7 +95,7 @@ export default function Resume(){
                 <Grid item xs={12}>
                     <Grid container spacing={3} justify='space-around'>
                         {resumeData.services.map(service =>(
-                            <Grid item xs={12} sm={6} md={3}>
+                            <Grid key={service.title} item xs={12} sm={6} md={3}>
                                 <div className='service'>
                                     <Icon className='service_icon'>
                                         {service.icon}
@@ -125,13 +125,13 @@ export default function Resume(){
                 <Grid item xs={12}>
                     <Grid container spacing={3} justify='space-between' className='p_15'>
                     {resumeData.skills.map(skill=>(
-                        <Grid item xs={12} sm={6} md={3}>
+                        <Grid key={skill.title} item xs={12} sm={6} md={3}>
                             <Paper elevation={0} className='skill'>
                                 <Typography variant='h6' className='skill_title'>
                                     {skill.title}
                                 </Typography>
                                 {skill.description.map(element =>(
-                                    <Typography variant='body2' className='skill_description'>
+                                    <Typography key={element} variant='body2' className='skill_description'>
                                         <TimelineDot variant={'outlined'} className='timeline_dot'/>
                                         {element}
                                     </Typography>

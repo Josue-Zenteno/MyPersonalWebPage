@@ -1,3 +1,4 @@
+/* Entire Footer  */
 .footer {
   background-color: #1e1e1e;
   color: white;
@@ -9,18 +10,23 @@
   border-radius: 8px;
   padding: 20px 25px;
 }
+/* End of Entire Footer  */
 
-.footer .footer_name {
+/* Footer Left */
+.footer .footer_left .footer_name {
   font-size: medium !important;
 }
+/* End ofFooter Left */
 
-.footer .footer_copyright {
+/* Footer Right */
+.footer .footer_right .footer_copyright {
   font-size: small !important;
   text-align: end !important;
   color: #9c9c9c !important;
 }
 
-.footer .footer_copyright > a {
+.footer .footer_right .footer_copyright > a {
   text-decoration: none !important;
   color: var(--main-color) !important;
 }
+/* End of Footer Right */

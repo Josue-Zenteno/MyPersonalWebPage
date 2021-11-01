@@ -1,33 +1,36 @@
-import { Nav, Navbar } from 'react-bootstrap';
+import { HomeRounded } from "@mui/icons-material"
 import { NavLink, withRouter } from 'react-router-dom';
-import { HomeRounded, Telegram } from "@mui/icons-material"
+import { Nav, Navbar } from 'react-bootstrap';
+
 import resumeData from '../../utils/resumeData';
-import CustomButton from '../Button/CustomButton';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
 
 function Header(props){
+
     const pathName = props?.location?.pathName;
 
     return(
-        <Navbar expand="lg" sticky='top' className='header'>
+        <Navbar expand='lg' sticky='top' className='header'>
             {/* Home Link */}
-            <Nav.Link as={NavLink} to={"/"} className={'header_navlink'}>
-                <Navbar.Brand className='header_home'>
+            <Nav.Link as={NavLink} to='/' className='header_home'>
+                <Navbar.Brand className='header_home_icon'>
                     <HomeRounded/>
                 </Navbar.Brand>
             </Nav.Link>
 
             <Navbar.Toggle/>
 
+            {/* NavBar Items */}
             <Navbar.Collapse>
-                <Nav className='header_left'>
+                {/* Pages */}
+                <Nav className='header_pages'>
                     {/* Resume Link */}
                     <Nav.Link 
                     as={NavLink} 
                     to='/' 
-                    className={pathName === '/' ? 'header_link_active' : 'header_link'}>
+                    className={pathName === '/' ? 'header_link active' : 'header_link'}>
                         Resume
                     </Nav.Link>
 
@@ -40,13 +43,17 @@ function Header(props){
                     </Nav.Link>
                 </Nav>
 
-                <div className='header_right'>
-                    {Object.keys(resumeData.socials).map(key => (
-                        <a href={resumeData.socials[key].link} target="_blank" rel="noreferrer">
-                            {resumeData.socials[key].icon}
+                {/* Socials */}
+                <div className='header_socials'>
+                    {resumeData.socials.map(social => (
+                        <a 
+                        key={social.name} 
+                        href={social.link} 
+                        target="_blank" 
+                        rel="noreferrer">
+                            {social.icon}
                         </a>
                     ))}
-                    <CustomButton text={"Hire Me"} icon={<Telegram/>}/>
                 </div>
             </Navbar.Collapse>
         </Navbar>

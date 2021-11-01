@@ -4,24 +4,23 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-
-import "./TimeLine.css"
 import { Typography } from '@mui/material';
 
-export default function CustomTimeLine({ title, icon, children }){
+import "./TimeLine.css"
 
+export default function CustomTimeLine({ title, icon, children }){
     return(
-        <Timeline className={'timeline'}>
-            {/* Item Header */}
-            <TimelineItem className={'timeline_firstItem'}>
+        <Timeline className='timeline'>
+            {/* Head Item */}
+            <TimelineItem className='timeline_firstItem'>
                 <TimelineSeparator>
-                <TimelineDot className={'timeline_dot_header'}>
+                <TimelineDot className='timeline_dot_header'>
                     {icon}
                 </TimelineDot>
                 <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent>
-                    <Typography variant='h6' className={'timeline_header'}>
+                <TimelineContent className='timeline_content'>
+                    <Typography variant='h6' className='timeline_header'>
                         {title}
                     </Typography>
                 </TimelineContent>
@@ -33,8 +32,8 @@ export default function CustomTimeLine({ title, icon, children }){
 };
 
 export const CustomTimeLineSeparator = () => (
-    <TimelineSeparator className={'separator_padding'}>
-        <TimelineDot variant={'outlined'} className={'timeline_dot'}/>
+    <TimelineSeparator className='separator_padding'>
+        <TimelineDot variant='outlined' className='timeline_dot'/>
         <TimelineConnector />
     </TimelineSeparator>
 )
