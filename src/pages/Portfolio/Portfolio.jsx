@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { Grid, Tabs, Tab, Typography, CardActionArea, Card, CardMedia, CardContent, Grow, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material'
-import resumeData from '../../utils/resumeData'
+import { Grid, Tabs, Tab, Typography, CardActionArea, Card, CardMedia, CardContent, Grow, Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material'
+import portfolioData from '../../utils/portfolioData'
 
 import './Portfolio.css'
 
 export default function Portfolio(){
 
-    const [tabValue, setTabValue] = useState('All');
+    const [tabValue, setTabValue] = useState('Todos');
     const [projectDialog, setProjectDialog] = useState(false);
 
     return(
-        <Grid container className='section pb_45 pt_45'>
+        <Grid container className='section pb_45 pt_20'>
             {/* Title */}
             <Grid item className='section_title mb_20'>
                 <span></span>
@@ -27,9 +27,9 @@ export default function Portfolio(){
                 indicatorColor='white' 
                 className='customTabs mb_20' 
                 onChange={(event, newValue) => setTabValue(newValue)}>
-                    <Tab label='All' value='All' className={tabValue === 'All' ? 'customTabs_item active' : 'customTabs_item'} />
+                    <Tab label='Todos' value='Todos' className={tabValue === 'Todos' ? 'customTabs_item active' : 'customTabs_item'} />
 
-                    {[...new Set(resumeData.projects.map(project => project.tag))].map(
+                    {[...new Set(portfolioData.projects.map(project => project.tag))].map(
                         tag => (
                         <Tab label={tag} 
                         value={tag} 
@@ -38,11 +38,11 @@ export default function Portfolio(){
                 </Tabs>
             
                 {/* Projects */}
-                <Grid item xs={12}>
+                <Grid item className="customCards" xs={12}>
                     <Grid container spacing={3} >
-                        {resumeData.projects.map(project => (
+                        {portfolioData.projects.map(project => (
                             <>
-                                {tabValue === project.tag || tabValue === 'All' ? (
+                                {tabValue === project.tag || tabValue === 'Todos' ? (
                                     <Grid item xs={12} sm={6} md={4}>
                                         <Grow in timeout={1000}>
                                             <Card className='customCard' onClick={() => setProjectDialog(project)}>
@@ -86,9 +86,9 @@ export default function Portfolio(){
                 </DialogContent>
                 <DialogActions className='projectDialog_actions'>
                     {projectDialog?.links?.map(link => (
-                        <a href={link.link} target='_blank' rel='noreferrer' className='projectDialog_icon'>
-                            {link.icon}
-                        </a>
+                        <Button variant='outlined' color='secondary' component='a' endIcon={link.icon} href={link.link} target='_blank' rel='noreferrer' className='projectDialog_icon'>
+                            Repositorio en GitHub
+                        </Button>
                     ))}
                 </DialogActions>
             </Dialog>
