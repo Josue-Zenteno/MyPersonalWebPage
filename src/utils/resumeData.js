@@ -1,269 +1,110 @@
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
-import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
-import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
-import DeliveryDiningOutlinedIcon from "@mui/icons-material/DeliveryDiningOutlined";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import BoltIcon from "@mui/icons-material/Bolt";
+import GroupsIcon from "@mui/icons-material/Groups";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
 
 const resumeData = {
-  name: "Josue Zenteno Yave",
-  title: "Software Ingenieering Student",
+  name: "Josue Carlos Zenteno Yave",
+  title: "Estudiante de Ingeniería Informática",
   birthday: "08/08/2000",
   email: "josuoptp@gmail.com",
-  phone: "609118725",
-  about:
-    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+  phone: "(+34) 609118725",
+  about: `Soy Josué y en este momento estoy terminando el grado en Ingeniería Informática en la Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM).\n\nEstoy enamorado del Desarrollo Web por lo que estoy aprendiendo muchas cosas sobre este mundo donde, además, me gusta compartir todas las cosas nuevas que aprendo con mis compañeros.\n\nUna de mis metas principales es convertirme en un gran desarrollador, razón por la cual doy lo mejor de mi mismo en cada proyecto, aprendiendo todo lo posible y buscando siempre las mejores soluciones a base de aplicar buenas prácticas, lo que me permite mejorar mis habilidades.\n\nSe bienvenido a mi página web y no dudes en contactar conmigo si estas interesado en saber más de mí.`,
   socials: [
-    {
-      name: "Twitter",
-      link: "https://twitter.com/SpicyJoss",
-      description: "My Twitter",
-      icon: <TwitterIcon />,
-    },
     {
       name: "Linkedin",
       link: "https://www.linkedin.com/in/josue-zenteno/",
-      description: "My Linkedin",
+      description: "Josue-Zenteno",
       icon: <LinkedInIcon />,
     },
     {
       name: "Github",
       link: "https://github.com/Josue-Zenteno",
-      description: "My Github",
+      description: "Josue-Zenteno",
       icon: <GitHubIcon />,
     },
   ],
   experiencies: [
     {
-      title: "Work 1",
-      date: "2018 - 2019",
+      title: "Coordinador de Eventos",
+      date: "Escuela Superior Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - Presente",
       description:
-        "My first job Lorem Ipsum is not simply random text. It has roots in a piece",
+        "Coordinación de torneos de e-sports entre otros eventos relevantes con cientos de participantes de diferentes partes de España cada año.",
     },
     {
-      title: "Work 2",
-      date: "2019 - 2020",
-      description:
-        "My first job Lorem Ipsum is not simply random text. It has roots in a piece",
+      title: "Profesor de Programación",
+      date: "Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - 2019/2021",
+      description: "Impartición de clases de fundamentos de programación para el programa de ayuda de estudiantes.",
     },
     {
-      title: "Work 3",
-      date: "2020 - 2021",
-      description:
-        "My first job Lorem Ipsum is not simply random text. It has roots in a piece",
+      title: "Delegado de Curso",
+      date: "Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - 2019/2021",
+      description: "Delegado de curso por dos años.",
     },
     {
-      title: "Work 4",
-      date: "2021 - Present",
-      description:
-        "My first job Lorem Ipsum is not simply random text. It has roots in a piece",
+      title: "Miembro de la Delegación de Alumnos de Informática ( DAI )",
+      date: "Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - Presente",
+      description: "Miembro de la delegación de alumnos de informática por cuatro años, organizando eventos y ayudando a los estudiantes.",
     },
   ],
   educations: [
     {
-      title: "Education 1",
-      date: "2018 - 2019",
+      title: "Grado Bilingüe en Ingeniería Informática",
+      date: "Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - 2018 – Presente",
       description:
-        "My first education Lorem Ipsum is not simply random text. It has roots in a piece",
+        "Grado completamente bilingüe en la Escuela Superior de Informática con una especialización en Tecnologías de la Información.",
     },
     {
-      title: "Education 2",
-      date: "2019 - 2020",
-      description:
-        "My first education Lorem Ipsum is not simply random text. It has roots in a piece",
+      title: "Desarrollo Web Full Stack con el Stack MERN 3.0",
+      date: "Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM) - 2020",
+      description: "",
     },
     {
-      title: "Education 3",
-      date: "2020 - 2021",
-      description:
-        "My first education Lorem Ipsum is not simply random text. It has roots in a piece",
-    },
-    {
-      title: "Education 4",
-      date: "2021 - Present",
-      description:
-        "My first education Lorem Ipsum is not simply random text. It has roots in a piece",
+      title: "Cambridge First Certificate in English ( B2 )",
+      date: "Dolmen School of English - 2018",
+      description: "",
     },
   ],
   services: [
     {
-      title: "Web Development",
-      description: "I have been a badass web developer for 10 years",
-      icon: <WebOutlinedIcon />,
+      title: "Proactivo",
+      description: "Soy una persona muy curiosa y siempre trato de aprender algo nuevo",
+      icon: <BoltIcon />,
     },
     {
-      title: "Branding Identity",
-      description: "I have been a badass brand developer for 10 years",
-      icon: <AssignmentOutlinedIcon />,
+      title: "Liderazgo",
+      description: "He liderado la gran mayoría de equipos que he tenido y no tengo miedo a tomar decisiones",
+      icon: <GroupsIcon />,
     },
     {
-      title: "Illustrator",
-      description: "I have been a badass illustration developer for 10 years",
-      icon: <CreateOutlinedIcon />,
+      title: "Aprendizaje rápido",
+      description: "Respondo rápido si tengo que trabajar con una tecnología nueva",
+      icon: <MenuBookIcon />,
     },
     {
-      title: "Fast delivery",
-      description: "I have been a badass fast delivery developer for 10 years",
-      icon: <DeliveryDiningOutlinedIcon />,
+      title: "Flexibilidad y Adaptabilidad",
+      description: "Trabajo bien en cualquier situación, incluso bajo mucha presión",
+      icon: <AutoAwesomeMosaicIcon />,
     },
   ],
   skills: [
     {
-      title: "Front-end",
-      description: [
-        "ReactJS",
-        "JavaScript",
-        "TypeScript",
-        "Bootstrap",
-        "Material UI",
-      ],
+      title: "Lenguajes de programación",
+      description: ["Javascript", "Python", "Java", "Markdown", "Shell"],
     },
     {
-      title: "Back-end",
-      description: ["NodeJS", "Java", "Python", "Solidity"],
+      title: "Frameworks",
+      description: ["ReactJS", "SpringBoot", "NodeJS", "Maven"],
     },
     {
-      title: "Databases",
-      description: ["Firebase", "My SQL Server", "MySQL", "MongoDB"],
+      title: "Bases de Datos",
+      description: ["MySQL", "MongoDB", "Microsoft Access"],
     },
     {
-      title: "Source Control",
-      description: ["Git", "Github", "SCRUM", "Agile"],
-    },
-  ],
-  projects: [
-    {
-      tag: "React",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "React Project 1",
-      caption: "A short description",
-      description: "This is my project 1 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: "React",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "React Project 2",
-      caption: "A short description",
-      description: "This is my project 2 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Angular",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "Angular Project 3",
-      caption: "A short description",
-      description: "This is my project 3 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Vue",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "Vue Project 4",
-      caption: "A short description",
-      description: "This is my project 4 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Vue",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "Vue Project 5",
-      caption: "A short description",
-      description: "This is my project 5 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Angular",
-      image:
-        "https://www.maxpixel.net/static/photo/640/Forms-Background-Lines-Abstract-Background-1789175.png",
-      title: "Angular Project 6",
-      caption: "A short description",
-      description: "This is my project 6 description please fill it in",
-      links: [
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://github.com/Josue-Zenteno",
-          icon: <GitHubIcon />,
-        },
-      ],
+      title: "Otros",
+      description: ["Material UI", "Bootstrap", "Git"],
     },
   ],
 };
