@@ -10,27 +10,12 @@ import { TimelineItem, TimelineContent, TimelineDot } from '@mui/lab';
 export default function Resume(){
     return(
         <>
-            {/* About me*/}
-            <Grid container className='section pb_45 pt_45'>
-                <Grid item className='section_title mb_30'>
-                    <span></span>
-                    <Typography variant='h6' className='section_title_text'>
-                        About me
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography variant='body2' className='aboutme_text'>
-                        {resumeData.about}
-                    </Typography>
-                </Grid>
-            </Grid>
-
             {/* Education and Experiences*/}
-            <Grid container className='section pb_45'>
+            <Grid container className='section pb_45 pt_20'>
                 <Grid item className='section_title mb_30'>
                     <span></span>
                     <Typography variant='h6' className='section_title_text'>
-                        Resume
+                        ¿Qué he hecho?
                     </Typography>
                 </Grid>
 
@@ -38,7 +23,7 @@ export default function Resume(){
                     <Grid container className='resume_timeline'>
                         {/* Working history */}
                         <Grid item sm={12} md={6}>
-                            <CustomTimeLine title='Work Experience' icon={<WorkIcon/>}>
+                            <CustomTimeLine title='Experiencia previa' icon={<WorkIcon/>}>
                                 {resumeData.experiencies.map(experience => (
                                     <TimelineItem key={experience.title}>
                                         <CustomTimeLineSeparator/>
@@ -60,7 +45,7 @@ export default function Resume(){
 
                         {/* Education history */}
                         <Grid item sm={12} md={6}>
-                            <CustomTimeLine title='Education' icon={<SchoolIcon/>}>
+                            <CustomTimeLine title='Estudios realizados' icon={<SchoolIcon/>}>
                                 {resumeData.educations.map(education => (
                                     <TimelineItem key={education.title}>
                                         <CustomTimeLineSeparator/>
@@ -88,7 +73,7 @@ export default function Resume(){
                 <Grid item className='section_title mb_30'>
                     <span></span>
                     <Typography variant='h6' className='section_title_text'>
-                        My Services
+                        Habilidades Blandas
                     </Typography>
                 </Grid>
 
@@ -118,7 +103,7 @@ export default function Resume(){
                 <Grid item className='section_title mb_30'>
                     <span></span>
                     <Typography variant='h6' className='section_title_text'>
-                        Skills
+                        Habilidades Duras
                     </Typography>
                 </Grid>
 
