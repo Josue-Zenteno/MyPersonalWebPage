@@ -1,12 +1,3 @@
-/* About me section */
-.aboutme_text {
-  color: darkslategray;
-  font-size: smaller;
-  line-height: 22px !important;
-  white-space: pre-line;
-}
-/* End of About me section */
-
 /* Timeline section */
 .resume_timeline .timeline_content .timeline_title {
   font-size: 16px !important;
@@ -14,13 +5,14 @@
 }
 
 .resume_timeline .timeline_content .timeline_date {
-  color: darkslategray;
+  color: rgb(94, 160, 160);
 }
 
 .resume_timeline .timeline_content .timeline_description {
-  color: gray;
+  color: rgb(109, 180, 180);
   font-size: small;
   margin-top: 6px;
+  text-align: justify;
 }
 /* End of Timeline section */
 
@@ -31,6 +23,7 @@
 }
 
 .service .service_title {
+  color: #fefefe;
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 35px !important;
@@ -38,7 +31,7 @@
 }
 
 .service .service_description {
-  color: #989898;
+  color: rgb(109, 180, 180);
   border-color: var(--main-color) !important;
   margin-right: 5px;
   text-align: center;
@@ -52,20 +45,30 @@
   font-size: 36px !important;
   margin-left: 0 !important;
   font-weight: 300 !important;
-  color: darkslategray !important;
+  color: white !important;
 }
 /* End of Services section */
 
 /* Skills section */
 .skill {
-  border-radius: 8px;
+  /* border-radius: 8px;
+  box-shadow: 20px 0px 48px 0px rgba(4, 6, 4, 0.13) !important; */
+  /* background: rgba(255, 255, 255, 0.95) !important; */
+  background: rgba(5, 170, 192, 0.1) !important;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
   padding: 20px;
-  box-shadow: 20px 0px 48px 0px rgba(4, 6, 4, 0.13) !important;
   min-height: 186px;
   height: 100%;
 }
+
 .skill .skill_title {
-  font-size: 14px !important;
+  color: #fefefe;
+  font-size: 18px !important;
   font-weight: 500 !important;
   line-height: 35px !important;
 }
@@ -73,7 +76,7 @@
 .skill .skill_description {
   display: flex;
   align-items: center;
-  color: #989898 !important;
+  color: rgb(109, 180, 180) !important;
   font-weight: 400 !important;
   line-height: 18px !important;
 }
