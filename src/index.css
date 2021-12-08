@@ -1,18 +1,32 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /*  Custom Styling */
-  overflow-x: hidden;
-  background-color: black !important;
-  background: url("./assets/images/background.png");
+  /*Scrollbar*/
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /*End of Scrollbar*/
+
+  /*Background*/
+  background-color: #080014;
+  background: url("./assets/images/SpicyFondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /*End of Background*/
 }
 
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  display: none;
+}
+/*End of Scrollbar*/
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
