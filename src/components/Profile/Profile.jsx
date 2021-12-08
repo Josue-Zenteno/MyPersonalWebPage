@@ -52,22 +52,24 @@ export default function Profile(){
             {/* Profile Information */}
             <div className='profile_information'>
                 <CustomTimeLine icon={<PersonOutlineIcon/>} >
-                    <CustomTimeLineItem title='Name' text={resumeData.name}/>
-                    <CustomTimeLineItem title='Title' text={resumeData.title}/>
+                    <CustomTimeLineItem title='Nombre' text={resumeData.name}/>
+                    <CustomTimeLineItem title='Titulo' text={resumeData.title}/>
+                    <CustomTimeLineItem title='Teléfono' text={resumeData.phone}/>
                     <CustomTimeLineItem title='Email' text={resumeData.email}/>
                     {resumeData.socials.map(social => (
                         <CustomTimeLineItem 
                         key={social.name} 
                         title={social.name} 
                         text={social.description} 
-                        link={social.link}/>
+                        link={social.link}
+                        />
                     ))}
                 </CustomTimeLine>
             </div>
             
             {/* Profile CV Button */}
-            <div className='profile_CVButton pb_45'>
-                <CustomButton text={"Download CV"} icon={<DownloadIcon/>}/>
+            <div className='profile_CVButton'>
+                <CustomButton text={"Descargar CV"} icon={<DownloadIcon/>}/>
             </div>
         </div>
     )
