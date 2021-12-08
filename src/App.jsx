@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
-import Resume from "./components/Resume/Resume";
-import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer/Footer";
+import Resume from "./pages/Resume/Resume";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Home from "./pages/Home/Home";
+
 
 import "./App.css";
 
 export default function App() {
   return (
-    <Container className={"mt_60"}>
+    <Container className={"mt_60"} maxWidth='xl'>
       <Grid container spacing={4}>
         {/* Profile section*/}
         <Grid item xs={12} sm={12} md={4} lg={3}>
@@ -33,8 +35,13 @@ export default function App() {
                 </Route>
 
                 {/* Resume */}
-                <Route path='/'>
+                <Route path='/resume'>
                   <Resume />
+                </Route>
+
+                {/* Resume */}
+                <Route path='/'>
+                  <Home />
                 </Route>
               </Switch>
             </div>
