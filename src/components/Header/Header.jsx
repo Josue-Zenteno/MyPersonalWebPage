@@ -29,8 +29,8 @@ function Header(props){
                     {/* Resume Link */}
                     <Nav.Link 
                     as={NavLink} 
-                    to='/' 
-                    className={pathName === '/' ? 'header_link active' : 'header_link'}>
+                    to='/resume' 
+                    className={pathName === '/resume' ? 'header_link active' : 'header_link'}>
                         Resume
                     </Nav.Link>
 
