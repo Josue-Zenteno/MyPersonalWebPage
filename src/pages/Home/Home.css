@@ -1,0 +1,20 @@
+.aboutme_text {
+  color: white;
+  font-size: smaller;
+  line-height: 22px !important;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+.welcome_text {
+  color: white;
+  font-size: smaller;
+  line-height: 22px !important;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.Banner {
+  width: 100%;
+  object-fit: cover;
+}
