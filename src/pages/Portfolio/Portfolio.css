@@ -4,6 +4,7 @@
 }
 
 .customTabs .customTabs_item {
+  color: rgb(94, 160, 160);
   padding: 0px !important;
   min-width: 0px !important;
   margin-right: 20px !important;
@@ -15,14 +16,26 @@
 /* End of Tabs Section */
 
 /* Cards Section */
+.customCards {
+  align-items: center;
+}
+
 .customCard {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 7px !important;
   height: 100%;
-  max-width: 250px;
+  max-width: 400px;
   max-height: 215px;
-  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.116) !important;
-  border-radius: 5px;
   overflow: hidden;
-  outline-width: 0px !important;
+}
+
+.customCard:hover {
+  -ms-transform: scale(1.07) !important;
+  -webkit-transform: scale(1.07) !important;
+  transform: scale(1.07) !important;
 }
 
 .customCard .customCard_image {
@@ -49,6 +62,7 @@
 
 .projectDialog .projectDialog_description {
   margin-top: 10px !important;
+  text-align: justify;
 }
 
 .projectDialog .projectDialog_actions {
@@ -60,9 +74,10 @@
   color: darkslategray;
   margin: 0px 12px;
   cursor: pointer;
+  text-transform: none;
 }
 
-.projectDialog .projectDialog_icon :hover {
+.projectDialog .projectDialog_icon:hover {
   color: var(--main-color);
 }
 
