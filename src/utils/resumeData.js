@@ -6,7 +6,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
 
 const resumeData = {
-  name: "Josue Carlos Zenteno Yave",
+  name: "Josué Carlos Zenteno Yave",
   title: "Estudiante de Ingeniería Informática",
   birthday: "08/08/2000",
   email: "josuoptp@gmail.com",
@@ -96,7 +96,7 @@ const resumeData = {
     },
     {
       title: "Frameworks",
-      description: ["ReactJS", "SpringBoot", "NodeJS", "Maven"],
+      description: ["ReactJS", "Express", "SpringBoot", "NodeJS", "Maven"],
     },
     {
       title: "Bases de Datos",
