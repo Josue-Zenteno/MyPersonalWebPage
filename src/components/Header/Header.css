@@ -49,7 +49,7 @@
 
 .header .header_pages .header_link {
   font-weight: 500;
-  color: darkslategray !important;
+  color: darkslategray;
 }
 
 .header .header_pages .header_link:hover {
