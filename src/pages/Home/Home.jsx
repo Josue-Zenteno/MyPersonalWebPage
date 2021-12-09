@@ -10,7 +10,7 @@ export default function Home(){
             <Grid item className='section_title mb_30'>
                 <span></span>
                 <Typography variant='h6' className='section_title_text'>
-                    ¿Quien soy?
+                    ¿Quién soy?
                 </Typography>
             </Grid>
 
