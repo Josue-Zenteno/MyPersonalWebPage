@@ -31,7 +31,7 @@ function Header(props){
                     as={NavLink} 
                     to='/resume' 
                     className={pathName === '/resume' ? 'header_link active' : 'header_link'}>
-                        Resume
+                        Experiencia
                     </Nav.Link>
 
                     {/* Portfolio Link */}
