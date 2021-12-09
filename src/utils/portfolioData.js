@@ -103,7 +103,7 @@ const portfolioData = {
       title: "Mazer",
       caption: "Generador y Resolutor de laberintos",
       description:
-        "Aplicación de escritorio que permite generar y resolver laberintos de cualquier tamaño dado mediante el uso de algoritmos de busqueda",
+        "Aplicación de escritorio que permite generar y resolver laberintos de cualquier tamaño dado mediante el uso de algoritmos de búsqueda",
       links: [
         {
           link: "https://github.com/Josue-Zenteno/Maze-Generator-Solver",
@@ -115,9 +115,9 @@ const portfolioData = {
       tag: "Java",
       image: "https://media.discordapp.net/attachments/571818726010257438/918140836116582501/JuegosTSW.png?width=877&height=515",
       title: "JuegosTSW",
-      caption: "Pagina web de mini juegos online",
+      caption: "Aplicación web de mini juegos online",
       description:
-        "Pagina Web que permite jugar a diferentes mini juegos como el tres en raya y las damas entre otros. Integra diferentes servicios como videollamada, chat de texto, registro con cuenta de google entre otros varios.",
+        "Aplicación web que permite jugar a diferentes mini juegos como el tres en raya y las damas entre otros. Integra diferentes servicios como videollamada, chat de texto, registro con cuenta de google.",
       links: [
         {
           link: "https://github.com/jalvarezz13/juegosTSW",
