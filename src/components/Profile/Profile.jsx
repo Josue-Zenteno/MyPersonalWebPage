@@ -7,7 +7,7 @@ import CustomButton from "../Button/CustomButton";
 import CustomTimeLine, { CustomTimeLineSeparator } from "../TimeLine/TimeLine"
 
 import resumeData from "../../utils/resumeData";
-import myImage from "../../assets/images/Spicy_ProfilePicIRL.jpg";
+import myImage from "../../assets/images/Spicy-ProfilePic.jpg";
 
 import './Profile.css';
 
