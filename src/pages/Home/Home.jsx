@@ -1,6 +1,5 @@
 import { Grid, Typography } from '@mui/material'
 import resumeData from '../../utils/resumeData';
-//import SpicyBanner from '../../assets/images/Spicy_Banner.png'
 import SpicyBannerLight from '../../assets/images/Spicy_Banner_Light.png'
 import './Home.css'
 
