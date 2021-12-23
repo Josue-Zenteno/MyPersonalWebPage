@@ -12,8 +12,8 @@ body {
 
   /*Background*/
   background-color: #080014;
-  background: url("./assets/images/SpicyFondo.png");
-  background-position: center center;
+  background: url("./assets/images/SpicyFondo-min.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
