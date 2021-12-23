@@ -6,6 +6,16 @@
   text-align: justify;
 }
 
+.aboutme_text a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.aboutme_text a:hover {
+  color: var(--main-color);
+}
+
 .welcome_text {
   color: white;
   font-size: smaller;
