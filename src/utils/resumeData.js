@@ -4,6 +4,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import GroupsIcon from "@mui/icons-material/Groups";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
+import { Link } from "@mui/material";
 
 const resumeData = {
   name: "Josué Carlos Zenteno Yave",
@@ -11,7 +12,21 @@ const resumeData = {
   birthday: "08/08/2000",
   email: "josuoptp@gmail.com",
   phone: "(+34) 609118725",
-  about: `Soy Josué y en este momento estoy terminando el grado en Ingeniería Informática en la Escuela Superior de Informática (ESI) - Universidad de Castilla-La Mancha (UCLM).\n\nEstoy enamorado del Desarrollo Web por lo que estoy aprendiendo muchas cosas sobre este mundo donde, además, me gusta compartir todas las cosas nuevas que aprendo con mis compañeros.\n\nUna de mis metas principales es convertirme en un gran desarrollador, razón por la cual doy lo mejor de mi mismo en cada proyecto, aprendiendo todo lo posible y buscando siempre las mejores soluciones a base de aplicar buenas prácticas, lo que me permite mejorar mis habilidades.\n\nSe bienvenido a mi página web y no dudes en contactar conmigo si estas interesado en saber más de mí.`,
+  about: [
+    "Soy Josué y en este momento estoy terminando el ",
+    <Link href='https://esi.uclm.es/categories/plan-de-estudios' target='_blank' rel='noreferrer'>
+      Grado en Ingeniería Informática
+    </Link>,
+    " en la ",
+    <Link href='https://esi.uclm.es/' target='_blank' rel='noreferrer'>
+      Escuela Superior de Informática (ESI)
+    </Link>,
+    " - ",
+    <Link href='https://www.uclm.es/' target='_blank' rel='noreferrer'>
+      Universidad de Castilla-La Mancha (UCLM)
+    </Link>,
+    ` .\n\nEstoy enamorado del Desarrollo Web por lo que estoy aprendiendo muchas cosas sobre este mundo donde, además, me gusta compartir todas las cosas nuevas que aprendo con mis compañeros.\n\nUna de mis metas principales es convertirme en un gran desarrollador, razón por la cual doy lo mejor de mi mismo en cada proyecto, aprendiendo todo lo posible y buscando siempre las mejores soluciones a base de aplicar buenas prácticas, lo que me permite mejorar mis habilidades.\n\nSe bienvenido a mi página web y no dudes en contactar conmigo si estas interesado en saber más de mí.`,
+  ],
   socials: [
     {
       name: "Linkedin",
